@@ -1,0 +1,14 @@
+<footer class="footer">
+    <div class="container">
+        <div class="columns has-text-centered">
+            {{ range .Site.Menus.footer }}
+            <div class="column is-narrow">
+                <a href="{{ .URL }}" class="font-bold">{{ .Name }}</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="back-to-top icon is-medium">
+        <i class="fas fa-arrow-circle-up fa-2x"></i>
+    </div>
+</footer>

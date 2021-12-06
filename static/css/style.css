@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Jetbrains Mono"),
+        url("../fonts/jetbrains-mono-v6-latin-regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2");
+    font-display: swap;
+}
+/* open-sans-italic - latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/open-sans-v18-latin-italic.woff2") format("woff2");
+    font-display: swap;
+}
+/* open-sans-700 - latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/open-sans-v18-latin-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+/* pt-serif-regular - latin */
+@font-face {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/pt-serif-v12-latin-regular.woff2") format("woff2");
+    font-display: swap;
+}
+/* pt-serif-italic - latin */
+@font-face {
+    font-family: "PT Serif";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/pt-serif-v12-latin-italic.woff2") format("woff2");
+    font-display: swap;
+}
+/* pt-serif-700 - latin */
+@font-face {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-serif-v12-latin-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+.logo h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+.max-800px {
+    max-width: 800px;
+}
+.gallery.js-flickity.flickity-enabled.is-draggable {
+    padding-top: 60px;
+}
+.mt-top {
+    margin-top: 4.25rem !important;
+}
+
+.image-loaded {
+    opacity: 1;
+    -webkit-transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1) 0ms,-webkit-transform 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1) 0ms,-webkit-transform 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms,opacity 1s cubic-bezier(0.4, 0, 0.25, 1) 0ms;
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms,opacity 1s cubic-bezier(0.4, 0, 0.25, 1) 0ms,-webkit-transform 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
+    overflow: hidden;
+}
+.image-loaded:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+/* Common style */
+
+figure .carousel-cell img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+figure .carousel-cell figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figcaption::before,
+figcaption::after {
+	pointer-events: none;
+}
+
+figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+figure .carousel-cell figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+
+figure .carousel-cell h2,
+figure .carousel-cell p {
+	margin: 0;
+}
+
+figure .carousel-cell p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+.carousel-title {
+    font-family: pt serif,ui-serif,Georgia,Cambria,times new roman,Times,serif;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.carousel-title:hover{
+    font-family: pt serif,ui-serif,Georgia,Cambria,times new roman,Times,serif;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.carousel-time {
+    font-family: pt serif,ui-serif,Georgia,Cambria,times new roman,Times,serif;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 1em;
+}
+/*---------------*/
+/***** Oscar Effect*****/
+/*---------------*/
+figure.effect-oscar {
+    background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+    background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+}
+
+figure.effect-oscar img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+	padding: 15em 3em 15em;
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+figure.effect-oscar figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid rgb(255, 255, 255);
+	content: '';
+}
+
+.carousel-title {
+	margin: 60% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-oscar:hover img {
+	opacity: 0.4;
+}
+/*---------------*/
+/***** Back-2-top *****/
+/*---------------*/
+.back-to-top {
+    position:fixed;
+    bottom: 5%;
+    right: 3%;
+    padding:20px;
+    display:none;
+    cursor: pointer;
+      -webkit-font-smoothing: antialiased;
+  }
+
+  .back-to-top:hover {
+      transition: all .4s linear;
+      transform: scale(1.1);
+  }
+  /*---------------*/
+/***** effect post card *****/
+/*---------------*/
+figure.effect-card img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-card:hover img {
+	opacity: 0.4;
+}

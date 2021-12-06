@@ -1,0 +1,17 @@
+{{ $permalink := .Permalink }}
+
+<figure class="carousel-cell image is-2by1 effect-oscar">
+    {{ with .Resources.ByType "image" }}
+    {{ range . }}
+    <a href="{{ $permalink }}"><img src="{{ .RelPermalink }}"></a>
+    {{ end }}   
+    {{ end }}   
+    <figcaption >  
+        <a class="carousel-title" href="{{ .Permalink }}">{{ .Title }}</a>
+        <div class="carousel-time">
+            {{ with .PublishDate }}
+            {{- dateFormat "Jan 2, 2006" .Local }}
+            {{ end }}
+        </div>
+    </figcaption>	
+</figure>		

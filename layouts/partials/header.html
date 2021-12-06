@@ -1,0 +1,37 @@
+<header>
+    <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">       
+         <div class="container">
+            <div class="navbar-brand">
+                <a href="/" title="home" class="navbar-item">
+                    <span class="logo"><h1><a  class="typewrite" data-period="2000" data-type='[ ">cd $HOME", "echo $USER", "Enchanté" ]'>
+                        <span class="wrap"></span>
+                      </a></h1></span>
+                </a>
+                {{ range .Site.Menus.social }}
+                <a href="{{ .URL }}" class="navbar-item is-hidden-desktop" title="{{ .Name }}"><span
+                        class="icon">{{ .Pre }}</span></a>
+                {{ end }}
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+
+                <div class="navbar-end">
+                    <div class="control has-icons-left .is-vcentered is-centered">
+                        <input class="input search is-rounded" placeholder="Search">
+                        <span class="icon is-small is-left"><i class="fas fa-search"></i></span>
+                    </div>
+                    {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
+                    {{ end }}
+                    <div class="control dark-button has-icon-right dark-mode ml-1 mr-1">
+                        <span class="icon is-small is-right" id="toggle-dark"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

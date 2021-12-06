@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="section">
+    <div class="container max-800px px-8">
+        <h1 class="title is-2 font-serif has-text-centered pt-1">
+            {{ .Title }}
+        </h1>
+        <div class="font-sans has-text-centered pb-1">
+            {{ with .PublishDate }}
+            {{- dateFormat "Jan 2, 2006" .Local }}
+            {{ end }}
+        </div>
+        <div class="content">
+            {{ .Content }}
+        </div>
+        <div class="post-tags"></div>
+            {{ range (.GetTerms "tags") }}
+            <a href="{{ .RelPermalink }}" class="tag is-info is-rounded mr-1 ml-1 ">
+                #{{ .LinkTitle }}
+            </a>
+        {{ end }}
+        </div>
+        <hr class="mt-16">
+    </div>
+</section>
+{{ end }}
