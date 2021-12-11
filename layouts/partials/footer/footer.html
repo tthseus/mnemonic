@@ -1,12 +1,36 @@
 <footer class="footer">
     <div class="container">
         <div class="columns has-text-centered">
-            {{ range .Site.Menus.footer }}
-            <div class="column is-narrow">
-                <a href="{{ .URL }}" class="font-bold">{{ .Name }}</a>
-            </div>
-            {{ end }}
+            <ul class="is-flex is-vcentered justify-content is-align-self-auto mx-auto">
+                <li>
+                    <a href="mailto:tthseus@gmail.com" aria-label="email" class="icon is-medium">
+                        <i data-feather="mail" class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/tthseus" target="_blank" rel="noopener" aria-label="GitHub" class="icon is-medium">
+                        <i data-feather="github" class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/tan-tinh-bui-953499180/" target="_blank" rel="noopener" aria-label="LinkedIn" class="icon is-medium">
+                        <i data-feather="linkedin" class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.xml" aria-label="RSS" class="icon is-medium">
+                        <i data-feather="rss" class="fas fa-rss"></i>
+                    </a>
+                </li>
+            </ul>
+
         </div>
+        <p class="has-text-centered justify-content mx-auto font-sans">
+            <a href="{{- site.BaseURL -}}">{{- site.Title -}}</a>
+            &copy; Powered by the
+            <a href="https://github.com/tthseus/memoir-theme" target="_blank" rel="noopener">
+                Memoir Theme</a>
+            </p>
     </div>
     <div class="back-to-top icon is-medium">
         <i class="fas fa-arrow-circle-up fa-2x"></i>

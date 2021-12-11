@@ -7,10 +7,6 @@
                         <span class="wrap"></span>
                       </a></h1></span>
                 </a>
-                {{ range .Site.Menus.social }}
-                <a href="{{ .URL }}" class="navbar-item is-hidden-desktop" title="{{ .Name }}"><span
-                        class="icon">{{ .Pre }}</span></a>
-                {{ end }}
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -19,11 +15,7 @@
             </div>
             <div class="navbar-menu">
 
-                <div class="navbar-end">
-                    <div class="control has-icons-left .is-vcentered is-centered">
-                        <input class="input search is-rounded" placeholder="Search">
-                        <span class="icon is-small is-left"><i class="fas fa-search"></i></span>
-                    </div>
+                <div class="navbar-end">                
                     {{ range .Site.Menus.main }}
                     <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
                     {{ end }}

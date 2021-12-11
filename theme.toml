@@ -8,9 +8,11 @@ description = ""
 homepage = "http://example.com/"
 tags = []
 features = []
-min_version = "0.41.0"
+min_version = "0.0.0"
 summaryLength = 40
-
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "RSS"]
 [params]
   css = ["css/style.css"]
   
