@@ -1,7 +1,7 @@
 # Memoir Theme for Hugo
 
 Memoir is a theme for the [Hugo](https://gohugo.io) with [Bulma CSS](https://bulma.io).
-
+![](2021-12-11-21-36-21.png)
 ## Getting Started
 
 Create a new site with Hugo
