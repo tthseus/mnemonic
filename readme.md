@@ -7,27 +7,31 @@ Memoir is a theme for the [Hugo](https://gohugo.io) with [Bulma CSS](https://bul
 Create a new site with Hugo
 
 ```bash
-hugo new site hugo-example-site
-cd hugo-example-site
-git init
+#create Hugo site
+hugo new site my-site && cd my-site
 ```
 
-Now you can add the theme
+Clone theme and add submodule
 
 ```bash
+git init
 git submodule add https://github.com/tthseus/memoir-theme.git themes/memoir-theme
 ```
 
 Copy `config.toml` and `exampleSite\content`; Customizing your page.  
 
-
 ```bash
-hugo --gc --minify
-or 
+#remove default config
+rm config.toml
+#copy exampleSite content and config
+cp -R themes/memoir-theme/exampleSite/* ./
+```
+Run server locally or build with public folder.
+```bash
 hugo server -D
 ```
 
 # Credits
-
--   [Starter theme by @dirkolbrich](https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter)
--   [Academic theme by @gcushen](https://sourcethemes.com/academic/)
+Many thanks to
+-   [Hugo Northeast theme by @y1zhou](https://github.com/y1zhou/hugo-northeast)
+-   [Series create Hugo theme from scratch by @Pakstech](https://pakstech.com/blog/create-hugo-theme/)
