@@ -14,9 +14,7 @@ assetDir = "static"
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML", "RSS"]
-[params]
-  css = ["css/style.css"]
-  
+    
 [author]
   name = "Theseus"
   homepage = "tthseus.github.io"

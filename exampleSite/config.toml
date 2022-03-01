@@ -4,6 +4,7 @@ title = "Stuff"
 theme = "memoir-theme"
 
 UglifyURLs = true
+assetDir = "static"
 CanonifyURLs = true
 summaryLength = 40
 [outputs]
