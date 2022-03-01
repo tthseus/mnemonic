@@ -1,6 +1,6 @@
 {{/* theme CSS  */}}
 
-{{ $style := resources.Get "static/css/style.css" | minify | fingerprint "md5" }}
+{{ $style := resources.Get "css/style.css" | minify | fingerprint "md5" }}
 {{ $flickity := resources.Get "css/flickity.min.css" | fingerprint "md5" }}
 {{ $bulma := resources.Get "css/bulma.min.css" | fingerprint "md5" }}
 
