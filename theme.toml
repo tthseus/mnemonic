@@ -3,7 +3,7 @@
 
 name = "Memoir"
 license = "MIT"
-licenselink = "https://github.com/tthseus/memoir-theme/blob/main/LICENSE"
+license link = "https://github.com/tthseus/memoir-theme/blob/main/LICENSE"
 description = "A Hugo theme"
 homepage = "https://github.com/tthseus/memoir-theme"
 tags = ["Hugo", "theme", "blog"]
@@ -17,4 +17,4 @@ assetDir = "static"
     
 [author]
   name = "Theseus"
-  homepage = "tthseus.github.io"
+  homepage = "https://tthseus.github.io"
